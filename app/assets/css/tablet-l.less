@@ -1,0 +1,334 @@
+@import "variables";
+
+@media only screen and (min-width:@tablet-l-breakpoint) {
+    .header {
+        .logo, .logo a img {
+            height: 58px;
+        }
+    }
+    .page-title {
+        h1 {
+            font-size: 40px;
+        }
+        .header-lines{
+            height: 45px;
+        }
+    }
+    .button {
+        padding: 15px 35px;
+        font-size: 18px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .get-platform {
+        background-size: cover;
+        .title {
+            font-size: 55px;
+            line-height: 55px;
+        }
+        .phones-container {
+            .phones {
+                max-width: 355px;
+            }
+            .platform {
+                width: 782px;
+                height: 473px;
+                background: url("../images/platform-tl.png");
+            }
+        }
+        .play-video-btn-container .play-video {
+            max-width: 220px;
+            font-size: 18px;
+            height: 54px;
+
+            .arrow {
+                width: 50px;
+                &:before {
+                    border-bottom-width: 10px;
+                    border-top-width: 10px;
+                    border-left-width: 12px;
+                    top: 17px;
+                    right: 15px;
+                }
+            }
+        }
+    }
+    .get-app {
+        p {
+            font-size: 20px;
+        }
+        .container {
+            padding-bottom: 120px;
+        }
+        .bottom-lines {
+            height: 170px;
+            &:before{
+                height: 170px;
+            }
+        }
+        .phones {
+            max-width: 420px;
+        }
+        .dw-buttons{
+            .dw-ios img, .dw-android img  {
+                max-width: 200px;
+            }
+        }
+    }
+
+    .info,
+    .benefits,
+    .company-info,
+    .features,
+    .get-app,
+    #subscribe,
+    .unsubscribe {
+        .title {
+            font-size: 55px;
+        }
+        p {
+            font-size: 22px;
+            line-height: 32px;
+            max-width: 950px;
+            margin: auto;
+        }
+    }
+
+    .info {
+        .title {
+            font-size: 54px;
+        }
+        .left-col {
+            .left-col-wrapper {
+                max-width: 320px;
+            }
+            .options {
+                span {
+                    font-size: 17px;
+                    max-width: 195px;
+                    padding: 10px 15px;
+                    box-sizing: border-box;
+                    &:before {
+                        border-right-width: 21px;
+                        border-bottom-width: 17px;
+                        top: -13px;
+                    }
+                }
+            }
+        }
+    }
+
+    .features {
+        .title {
+            font-size: 54px;
+        }
+        .brick-container {
+            max-width: 1136px;
+            .brick {
+                padding: 30px;
+                border-radius: 15px;
+                p {
+                    font-size: 22px;
+                }
+                &.green {
+                    &:before {
+                        border-right-width: 30px;
+                        border-bottom-width: 38px;
+                        right: -30px;
+                        bottom: 38px;
+                    }
+                }
+                &.white-green {
+                    &:before {
+                        border-right-width: 38px;
+                        border-bottom-width: 30px;
+                        left: 38px;
+                        top: -30px;
+                    }
+                }
+                &.grass-green {
+                    &:before {
+                        border-right-width: 38px;
+                        border-top-width: 30px;
+                        left: 38px;
+                        bottom: -30px;
+                    }
+                }
+                &.dark-green {
+                    &:before {
+                        border-left-width: 30px;
+                        border-top-width: 38px;
+                        left: -30px;
+                        top: 38px;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom-lines {
+        height: 170px;
+    }
+
+    .company-info {
+        padding-bottom: 180px;
+    }
+
+    .footer {
+        .clearfix();
+        p {
+            font-size: 14px;
+            line-height: 26px;
+            text-align: left;
+            width: 310px;
+            float: right;
+            &.copyright {
+                width: 50%;
+                float: left;
+            }
+        }
+    }
+
+    .rules {
+        .container {
+            padding: 45px 15px 50px;
+        }
+        .rules-nav {
+            .container{
+                overflow: hidden;
+                padding-left: 0;
+            }
+            ul li a {
+                padding : 13px;
+                font-size: 14px;
+            }
+        }
+        h2 {
+            font-size: 26px;
+        }
+        p,
+        ul li, ol li  {
+            font-size: 18px;
+            line-height: 32px;
+        }
+        ul.circle li {
+            padding-bottom: 16px;
+            &:before {
+                width: 14px;
+                height: 14px;
+            }
+            &:after {
+                left: 1px;
+                top: 10px;
+                width: 12px;
+                height: 12px;
+            }
+        }
+    }
+
+    .unsubscribe {
+        .title {
+            max-width: 1000px;
+        }
+        form {
+            padding-top: 50px;
+        }
+    }
+
+    .info .youtube-container {
+        a {
+            &:after {
+                width: 87px;
+                height: 87px;
+                background-position: left center;
+                background-size: inherit;
+            }
+            &:hover {
+                &:after {
+                    width: 87px;
+                    height: 87px;
+                    background-position: right center;
+                    background-size: inherit;
+                }
+            }
+        }
+    }
+
+    .padding (100);
+    .padding (@index) when (@index >= 0) {
+        .padding (@index - 5);
+        .p-tl-@{index} {
+            padding: @index*1px;
+        }
+    }
+
+    .padding-top (100);
+    .padding-top (@index) when (@index >= 0) {
+        .padding-top (@index - 5);
+        .pt-tl-@{index} {
+            padding-top: @index*1px;
+        }
+    }
+
+    .padding-right (100);
+    .padding-right (@index) when (@index >= 0) {
+        .padding-right (@index - 5);
+        .pr-tl-@{index} {
+            padding-right: @index*1px;
+        }
+    }
+
+    .padding-bottom (100);
+    .padding-bottom (@index) when (@index >= 0) {
+        .padding-bottom (@index - 5);
+        .pb-tl-@{index} {
+            padding-bottom: @index*1px;
+        }
+    }
+    /*
+     * 5.2 -> Margin
+     * -----------------------------------------------
+    */
+    .margin (100);
+    .margin (@index) when (@index >= 0) {
+        .margin (@index - 5);
+        .m-tl-@{index} {
+            margin: @index*1px;
+        }
+    }
+
+    .margin-top (100);
+    .margin-top (@index) when (@index >= 0) {
+        .margin-top (@index - 5);
+        .mt-tl-@{index} {
+            margin-top: @index*1px;
+        }
+    }
+
+    .margin-right (100);
+    .margin-right (@index) when (@index >= 0) {
+        .margin-right (@index - 5);
+        .mr-tl-@{index} {
+            margin-right: @index*1px;
+        }
+    }
+
+    .margin-bottom (100);
+    .margin-bottom (@index) when (@index >= 0) {
+        .margin-bottom (@index - 5);
+        .mb-tl-@{index} {
+            margin-bottom: @index*1px;
+        }
+    }
+
+    .margin-left (100);
+    .margin-left (@index) when (@index >= 0) {
+        .margin-left (@index - 5);
+        .ml-tl-@{index} {
+            margin-left: @index*1px;
+        }
+    }
+}

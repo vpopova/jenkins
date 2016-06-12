@@ -1,0 +1,185 @@
+@import "variables";
+
+@media only screen and (min-width:@mobile-l-breakpoint) {
+
+    /*
+     * 1 -> First section - The voice of the markets
+     * -----------------------------------------------
+    */
+    .get-platform {
+        .container {
+            position: relative;
+            .clearfix();
+        }
+        .left-col {
+            width: 53%;
+            float: left;
+        }
+        .left-col {
+            text-align: left;
+        }
+        .title {
+            font-size: 33px;
+            text-align: left;
+            span {
+                display: block;
+            }
+        }
+        .subtitle {
+            text-align: left;
+            font-size: 20px;
+            line-height: 28px;
+        }
+        .dw-buttons {
+            text-align: left;
+        }
+    }
+    .phones-container {
+        width: 43%;
+        position: absolute;
+        right: 15px;
+        bottom: 0;
+        .phones {
+            width: 100%;
+            max-width: 230px;
+        }
+    }
+
+
+    .info {
+        .container {
+            .clearfix();
+        }
+        .left-col{
+            max-width: 300px;
+            margin: auto;
+        }
+//        .left-col {
+//            float: left;
+//            width: 45%;
+//            max-width: 250px;
+//            box-sizing: border-box;
+//            img {
+//                display: block;
+//                margin: auto;
+//                width: 100%;
+//                max-width: 400px;
+//            }
+//        }
+//        .right-col {
+//            float: right;
+//            width: 55%;
+//            p {
+//                text-align: left;
+//                line-height: 28px;
+//            }
+//        }
+    }
+
+
+    #subscribe,
+    .unsubscribe {
+        .subscribe-container {
+            .clearfix();
+            max-width: 880px;
+            margin: auto;
+        }
+        .mc-field-group {
+            width: 65%;
+            float: left;
+            max-width: 100%;
+            margin-top: 13px;
+        }
+        .subscribe-button {
+            width: 35%;
+            float: right;
+            padding-left: 30px;
+            box-sizing: border-box;
+            #mc-embedded-subscribe {
+                width: 100%;
+            }
+        }
+    }
+
+    .padding (100);
+    .padding (@index) when (@index >= 0) {
+        .padding (@index - 5);
+        .p-ml-@{index} {
+            padding: @index*1px;
+        }
+    }
+
+    .padding-top (100);
+    .padding-top (@index) when (@index >= 0) {
+        .padding-top (@index - 5);
+        .pt-ml-@{index} {
+            padding-top: @index*1px;
+        }
+    }
+
+    .padding-right (100);
+    .padding-right (@index) when (@index >= 0) {
+        .padding-right (@index - 5);
+        .pr-ml-@{index} {
+            padding-right: @index*1px;
+        }
+    }
+
+    .padding-bottom (100);
+    .padding-bottom (@index) when (@index >= 0) {
+        .padding-bottom (@index - 5);
+        .pb-ml-@{index} {
+            padding-bottom: @index*1px;
+        }
+    }
+    /*
+     * 3.2 -> Margin
+     * -----------------------------------------------
+    */
+    .margin (100);
+    .margin (@index) when (@index >= 0) {
+        .margin (@index - 5);
+        .m-ml-@{index} {
+            margin: @index*1px;
+        }
+    }
+
+    .margin-top (100);
+    .margin-top (@index) when (@index >= 0) {
+        .margin-top (@index - 5);
+        .mt-ml-@{index} {
+            margin-top: @index*1px;
+        }
+    }
+
+    .margin-right (100);
+    .margin-right (@index) when (@index >= 0) {
+        .margin-right (@index - 5);
+        .mr-ml-@{index} {
+            margin-right: @index*1px;
+        }
+    }
+
+    .margin-bottom (100);
+    .margin-bottom (@index) when (@index >= 0) {
+        .margin-bottom (@index - 5);
+        .mb-ml-@{index} {
+            margin-bottom: @index*1px;
+        }
+    }
+
+    .margin-left (100);
+    .margin-left (@index) when (@index >= 0) {
+        .margin-left (@index - 5);
+        .ml-ml-@{index} {
+            margin-left: @index*1px;
+        }
+    }
+
+    .safari9.iphone {
+        .animated {
+            -webkit-animation-duration: 0s;
+            animation-duration: 0s;
+        }
+    }
+}

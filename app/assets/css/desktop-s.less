@@ -1,0 +1,339 @@
+@import "variables";
+
+@media only screen and (min-width:@desktop-s-breakpoint) {
+    .button {
+        font-size: 22px;
+    }
+
+    .container {
+        max-width: 1170px;
+        margin: auto;
+    }
+    .page-title {
+        h1 {
+            font-size: 54px;
+            position: absolute;
+            width: 100%;
+        }
+        .header-lines{
+            height: 145px;
+        }
+    }
+
+    .get-platform {
+        background-size: contain;
+        .phones-container {
+            .phones {
+                max-width: 360px;
+            }
+            .platform {
+                width: 950px;
+                height: 575px;
+                background: url("../images/platform-ds.png");
+            }
+        }
+
+        .play-video-btn-container .play-video {
+            max-width: 250px;
+            font-size: 22px;
+            height: 60px;
+
+            .arrow {
+                width: 52px;
+                &:before {
+                    top: 20px;
+                    right: 16px;
+                }
+            }
+        }
+    }
+
+    .info,
+    .benefits,
+    .get-app,
+    .company-info,
+    .features,
+    #subscribe,
+    .unsubscribe {
+        padding-top: 70px;
+        .title {
+            font-size: 56px;
+            max-width: 100%;
+        }
+        p {
+            font-size: 24px;
+            line-height: 40px;
+            line-height: 40px;
+            max-width: 1120px;
+            margin: auto;
+        }
+    }
+
+    .info {
+        padding: 65px 0;
+        .title {
+            font-size: 57px;
+            padding-bottom: 45px;
+        }
+        .left-col {
+            .left-col-wrapper {
+                max-width: 420px;
+            }
+            img {
+                max-width: 420px;
+            }
+            .options {
+                span {
+                    font-size: 21px;
+                    margin: 25px auto 25px auto;
+                }
+                &.top {
+                    .gradient{
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+        .right-col {
+            p {
+                line-height: 38px;
+            }
+        }
+    }
+
+    .features {
+        .brick-container {
+            .brick {
+                p {
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+
+    .benefits {
+        padding-bottom: 80px;
+    }
+
+    #subscribe {
+        .title span {
+            display: inline;
+        }
+    }
+
+    .company-info {
+        background-attachment: fixed;
+        background: #38357d url('../images/company-info-bg-parallax-big.jpg') no-repeat center bottom;
+        background-attachment: fixed;
+        background-size: contain;
+        padding-bottom: 0;
+        .bottom-lines {
+            display: block;
+            padding-top: 20px;
+            background: url('../images/bootom-lines-red.png') no-repeat center bottom;
+            position: relative;
+            bottom: -57px;
+        }
+    }
+
+    .footer {
+        padding: 25px 0;
+    }
+
+    .rules {
+        .container {
+            padding: 50px 15px 110px;
+        }
+        h2 {
+            padding: 75px 0 30px;
+        }
+        p {
+            padding-bottom: 25px;
+        }
+        p ~ h2 {
+            padding-top: 40px
+        }
+        p,
+        ul li, ol li {
+            font-size: 20px;
+            line-height: 34px;
+        }
+        ul.circle {
+            padding-top: 32px;
+            li {
+                padding-bottom: 36px;
+                margin-left: 15px;
+                &:before {
+                    width: 16px;
+                    height: 16px;
+                    margin-left: -26px;
+                }
+                &:after {
+                    left: -4px;
+                    top: 10px;
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+        }
+    }
+
+    #subscribe,
+    .unsubscribe {
+        padding-bottom: 85px;
+        #mc_embed_signup .mce_inline_error.email {
+            font-size: 28px;
+            padding: 0 15px 7px 60px;
+        }
+        .subscribe-container {
+            max-width: 670px;
+        }
+        .mc-field-group {
+            width: 60%;
+            font-size: 28px;
+            margin-top: 14px;
+            &:before {
+                width: 45px;
+                height: 32px;
+                top: -2px;
+            }
+        }
+        .subscribe-button {
+            width: 40%;
+            #mc-embedded-subscribe {
+                max-width: 100%;
+                padding: 15px;
+                font-size: 25px;
+            }
+        }
+        .email {
+            font-size: 28px;
+            padding: 0 15px 7px 60px;
+            -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+        }
+    }
+
+    .error {
+        .error-msg {
+            max-width: 420px;
+        }
+        .title {
+            font-size: 50px;
+            padding: 6px 0 15px;
+        }
+    }
+
+    .btn {
+        font-size: 28px;
+    }
+
+    .confirm-mail {
+        .title {
+            padding-bottom: 50px;
+            font-size: 48px;
+        }
+        .btn {
+            font-size: 20px;
+        }
+        .center {
+            font-size: 20px;
+        }
+    }
+    .cookie-warning {
+        .container{
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .unsubscribe {
+        form {
+            padding-top: 80px;
+        }
+    }
+    .navigation ul li a {
+        font-weight: bold;
+        font-weight: bold;
+    }
+    
+    .padding (100);
+    .padding (@index) when (@index >= 0) {
+        .padding (@index - 5);
+        .p-ds-@{index} {
+            padding: @index*1px;
+        }
+    }
+
+    .padding-top (100);
+    .padding-top (@index) when (@index >= 0) {
+        .padding-top (@index - 5);
+        .pt-ds-@{index} {
+            padding-top: @index*1px;
+        }
+    }
+
+    .padding-right (100);
+    .padding-right (@index) when (@index >= 0) {
+        .padding-right (@index - 5);
+        .pr-ds-@{index} {
+            padding-right: @index*1px;
+        }
+    }
+
+    .padding-bottom (100);
+    .padding-bottom (@index) when (@index >= 0) {
+        .padding-bottom (@index - 5);
+        .pb-ds-@{index} {
+            padding-bottom: @index*1px;
+        }
+    }
+    /*
+     * 5.2 -> Margin
+     * -----------------------------------------------
+    */
+    .margin (100);
+    .margin (@index) when (@index >= 0) {
+        .margin (@index - 5);
+        .m-ds-@{index} {
+            margin: @index*1px;
+        }
+    }
+
+    .margin-top (100);
+    .margin-top (@index) when (@index >= 0) {
+        .margin-top (@index - 5);
+        .mt-ds-@{index} {
+            margin-top: @index*1px;
+        }
+    }
+
+    .margin-right (100);
+    .margin-right (@index) when (@index >= 0) {
+        .margin-right (@index - 5);
+        .mr-ds-@{index} {
+            margin-right: @index*1px;
+        }
+    }
+
+    .margin-bottom (100);
+    .margin-bottom (@index) when (@index >= 0) {
+        .margin-bottom (@index - 5);
+        .mb-ds-@{index} {
+            margin-bottom: @index*1px;
+        }
+    }
+
+    .margin-left (100);
+    .margin-left (@index) when (@index >= 0) {
+        .margin-left (@index - 5);
+        .ml-ds-@{index} {
+            margin-left: @index*1px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1366px) and (min-height: 600px) {
+    .company-info {
+        background-size: cover;
+    }
+}

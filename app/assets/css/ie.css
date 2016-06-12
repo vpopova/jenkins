@@ -1,0 +1,286 @@
+html,
+body {
+  border: 0;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+  display: table;
+  width: 100%;
+}
+body {
+  width: 100%;
+  background-color: #F4F4F4;
+  -webkit-text-size-adjust: 100%;
+}
+div,
+span,
+object,
+iframe,
+img,
+table,
+caption,
+thead,
+tbody,
+tfoot,
+tr,
+tr,
+td,
+article,
+aside,
+canvas,
+details,
+figure,
+hgroup,
+menu,
+nav,
+footer,
+header,
+section,
+summary,
+mark,
+audio,
+video {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cit,
+code,
+del,
+dfn,
+em,
+ins,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+b,
+i,
+hr,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+legend,
+label {
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  color: #343738;
+  font-weight: 400;
+}
+h1 {
+  font-family: Asap;
+  font-weight: 400;
+}
+article,
+aside,
+canvas,
+figure,
+figure img,
+figcaption,
+hgroup,
+footer,
+header,
+nav,
+section,
+audio,
+video {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+a img {
+  border: 0;
+}
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+  outline: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+:focus {
+  outline: 0;
+}
+.center {
+  text-align: center;
+}
+.link {
+  color: #099697;
+  text-decoration: underline;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/Open_Sans/OpenSans-Light.eot?') format('eot'), url('../fonts/Open_Sans/OpenSans-Light.woff') format('woff'), url('../fonts/Open_Sans/OpenSans-Light.ttf') format('truetype'), url('assets/fonts/Open_Sans/OpenSans-Light.svg#OpenSans-Light') format('svg');
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/Open_Sans/OpenSans-Bold.eot?') format('eot'), url('../fonts/Open_Sans/OpenSans-Bold.woff') format('woff'), url('../fonts/Open_Sans/OpenSans-Bold.ttf') format('truetype'), url('assets/fonts/Open_Sans/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Asap';
+  src: url('../fonts/Asap/Asap-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Asap';
+  src: url('../fonts/Asap/Asap-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+#browser-warning-msg-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  min-height: 650px;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#38256f', endColorstr='#39599b');
+  /* for IE */
+}
+#browser-warning-msg-wrapper .msg-container {
+  width: 776px;
+  height: 530px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  margin-top: -265px;
+  margin-left: -388px;
+}
+#browser-warning-msg-wrapper .msg-container .logo-container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+#browser-warning-msg-wrapper .msg-container .logo-container .logo img {
+  height: 70px;
+}
+#browser-warning-msg-wrapper .msg-container .bottom-arrow,
+#browser-warning-msg-wrapper .msg-container ul li a {
+  background: transparent url(../images/old-browsers.png) no-repeat;
+}
+#browser-warning-msg-wrapper .msg-container .ie-msg-logo {
+  background-position: 0 0;
+  height: 245px;
+}
+#browser-warning-msg-wrapper .msg-container .msg-text-container {
+  position: relative;
+  padding: 35px;
+  height: 140px;
+  text-align: center;
+}
+#browser-warning-msg-wrapper .msg-container .msg-title {
+  color: #fff;
+  font-size: 40px;
+  text-transform: none;
+  padding: 0;
+  line-height: 25px;
+  margin-bottom: 45px;
+}
+#browser-warning-msg-wrapper .msg-container .msg-body {
+  font-size: 18px;
+  color: #fff;
+  line-height: 30px;
+}
+#browser-warning-msg-wrapper .msg-container .hl-red {
+  color: #e62e52;
+  font-weight: 700;
+}
+#browser-warning-msg-wrapper .msg-container ul {
+  list-style: none;
+  margin-top: 15px;
+  padding: 30px 0 0 0;
+  overflow: hidden;
+}
+#browser-warning-msg-wrapper .msg-container ul li {
+  float: left;
+  text-align: center;
+  box-sizing: border-box;
+}
+#browser-warning-msg-wrapper .msg-container ul li a {
+  display: block;
+  width: 107px;
+  padding-top: 114px;
+  margin-right: 59px;
+  font-size: 15px;
+  color: #fff;
+}
+#browser-warning-msg-wrapper .msg-container ul li a:hover {
+  text-decoration: underline;
+}
+#browser-warning-msg-wrapper .msg-container ul li a.icon-chrome {
+  background-position: 0px -7px;
+  margin-left: 1px;
+}
+#browser-warning-msg-wrapper .msg-container ul li a.icon-firefox {
+  background-position: -154px -7px;
+}
+#browser-warning-msg-wrapper .msg-container ul li a.icon-ie {
+  background-position: -307px -7px;
+}
+#browser-warning-msg-wrapper .msg-container ul li a.icon-opera {
+  background-position: -449px -7px;
+}
+#browser-warning-msg-wrapper .msg-container ul li a.icon-safari {
+  background-position: -627px -7px;
+  margin-right: 0;
+}
+#browser-warning-msg-wrapper .text-uppc {
+  text-transform: uppercase;
+}
+.ie8 .cookie-warning,
+.ie8 .wrapper,
+.ie8 .footer {
+  display: none;
+}
